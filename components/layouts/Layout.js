@@ -13,6 +13,7 @@ const Layout = (props) => {
                         --gris2: #6F6F6F;
                         --gris3: #E1E1E1;
                         --naranja: #e12e0d;
+                        --naranja2: #CC4D00;
                     }
 
                     html {
