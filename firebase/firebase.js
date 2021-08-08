@@ -18,6 +18,16 @@ class Firebase {
             displayName: nombre
         })
     }
+
+    //Inicia sesión del usuario
+    async Login(email, password) {
+        return this.auth.signInWithEmailAndPassword(email, password)
+    }
+
+    //Cierra la sesión del usuario
+    async cerrarSesion() {
+        await this.auth.signOut()
+    }
 }
 
 const firebase = new Firebase()
