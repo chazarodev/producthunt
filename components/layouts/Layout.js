@@ -36,21 +36,26 @@ const Layout = (props) => {
                         font-family: 'Roboto Slab', serif;
                         font-weight: 700;
                     }
-                    h3 {
+                    h3,h4 {
                         font-family: 'PT Sans', sans-serif;
+                    }
+                    p {
+                        font-family: 'Roboto Slab', serif;
                     }
                     ul {
                         list-style: none;
                         margin: 0;
                         padding: 0;
                     }
+                    img {
+                        max-width: 100%;
+                    }
                 `}
             />
             <Head>
-                <html lang="es"/>
                 <title>Product Hunt Firebase y Next</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"/>
                 <link href="/static/css/app.css" rel="stylesheet"/>
             </Head>
