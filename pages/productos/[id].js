@@ -78,7 +78,7 @@ const Producto = () => {
         if(haVotado.includes(usuario.uid)) {
             return
         }
-        
+
         //Obtener y sumar un nuevo voto
         const nuevoTotal = votos + 1
 
@@ -97,6 +97,7 @@ const Producto = () => {
             votos: nuevoTotal
         })
         guardarConsultarDB(true) //Hay un voto, por lo tanto, consultar a la BD
+        return router.reload()
     }
 
     //Funciones para crear Comentarios
