@@ -67,8 +67,6 @@ const Producto = () => {
 
     const { comentarios, creado, descripcion, empresa, nombre, url, urlimagen, votos, creador, haVotado} = producto
 
-    console.log(usuario.uid)
-
     //Administrar y validar los votos
     const votarProducto = () => {
         if (!usuario) {
